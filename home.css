@@ -109,22 +109,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px; 
+    height: 500px;
+    color: #000000; /* White text color */
+    background-color: #FFF1B2BC; /* Adjust height as needed */
 }
 
 .big-card {
-    flex: 1;
-    margin-right: 20px;
-    padding: 20px; 
-    text-align: center; 
-    color: #ffffff; 
-    background-color: #007bff;
-    border-radius: 10px; 
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Add some space between big-card and pet-image */
+    padding: 20px; /* Add padding to big-card */
+    text-align: center; /* Center align the content */
+    color: #000000; /* White text color */
+    background-color: #FFF1B2BC; /* Blue background color */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .heading {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 .pera {
@@ -134,8 +136,8 @@
 
 .shop-now-btn {
     padding: 10px 20px;
-    background-color: #ffffff; 
-    color: #007bff; 
+    background-color: #ffffff; /* White button background color */
+    color: #007bff; /* Blue button text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -143,12 +145,12 @@
 }
 
 .shop-now-btn:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Light gray button background color on hover */
 }
 
 .pet-image {
     position: relative;
-    flex: 1; 
+    flex: 1; /* Take up remaining space */
     overflow: hidden; /* Ensure no overflow */
     display: flex; /* Make it a flex container */
     justify-content: center; /* Center the content horizontally */
@@ -165,6 +167,10 @@
     width: 100%; /* Ensure full width */
     height: 100%; /* Ensure full height */
     object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.back-image {
+    z-index: 1; /* Ensure back-image stays below pet images */
 }
 
 .pet1,
